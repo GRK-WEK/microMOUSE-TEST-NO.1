@@ -214,7 +214,7 @@ for i, (x, y) in enumerate([(-26, -44), (26, -44), (-26, 44), (26, 44)]):
 assy = cq.Assembly(name="Micromouse_Velocity_MM01")
 for n, shp, col in parts:
     assy.add(shp, name=n, color=col)
-assy.save("/mnt/user-data/outputs/Micromouse_MM01.step", exportType="STEP")
+assy.save("Micromouse_MM01.step", exportType="STEP")
 print("parts:", len(parts))
 
 if __name__ == "__main__":
